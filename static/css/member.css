@@ -1,0 +1,85 @@
+.body {
+  font-family: Helvetica;
+}
+
+.navbar {
+  border-bottom: 0.1px solid #000; /* Menambahkan garis bawah berwarna hitam */
+}
+
+
+.navbar .navbar-text {
+  text-decoration: none;
+  margin-left: 50px;
+  color: black;
+  font-size: 30px;
+}
+
+.navbar a {
+  margin-right: 65px;
+  text-decoration: none;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.navbar a:hover {
+  color: rgb(112, 107, 104);
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  padding: 60px 30px;
+  margin: 40px auto;
+}
+
+.wrapper {
+  width: 95%;
+  max-width: 1200px;
+  border: 3px solid black;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.5);
+}
+
+.hero h2 {
+  font-size: 32px;
+  text-align: center;
+}
+
+.hero hr {
+  width: 150px;
+  margin: 15px auto;
+}
+
+.members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.team {
+  flex: 1 1 calc(33.33% - 20px);
+  max-width: calc(33.33% - 20px);
+  text-align: center;
+}
+
+.team img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 15px;
+}
+
+.team h4,
+p {
+  text-align: center;
+  font-size: 16px;
+  margin: 12px;
+}

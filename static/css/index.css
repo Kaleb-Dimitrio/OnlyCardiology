@@ -1,0 +1,79 @@
+body {
+  padding-top: 100px;
+  font-family: Helvetica;
+}
+
+.navbar {
+  border-bottom: 0.1px solid #000;
+}
+
+.navbar .navbar-text {
+  text-decoration: none;
+  margin-left: 50px;
+  color: black;
+  font-size: 30px;
+}
+
+.navbar a {
+  margin-right: 65px;
+  text-decoration: none;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.navbar a:hover {
+  color: rgb(112, 107, 104);
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  margin: 37px 0;
+}
+
+.input-box label {
+  position: absolute;
+  top: 25px;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 1em;
+  color: black;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -20px;
+}
+
+.input-box input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  outline: none;
+  font-size: 1em;
+  color: black;
+  padding: 0 35px 0 5px;
+}
+
+.form-text {
+  font-size: 0.9em;
+  color: #6c757d; /* Warna teks abu-abu sesuai gaya Bootstrap */
+  margin-top: 5px;
+}
+
+.form-container button {
+  width: 100%;
+  height: 40px;
+  background: blue;
+  border: 10px;
+  outline: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 1em;
+  color: #000;
+  font-weight: 500;
+  margin-bottom: 40px;
+}

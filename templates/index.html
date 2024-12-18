@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../static/css/index.css" />
+
+    <title>Test Jantung</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light fixed-top">
+        <div class="container-fluid">
+            <span class="navbar-text">OnlyCardiology</span>
+            <div class="d-flex ms-auto">
+                <a href="/" class="btn ms-2">Formulir</a>
+                <a href="member" class="btn ms-2">Member</a>
+                <a href="about" class="btn ms-2">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2 class="alert alert-primary text-center mt-3">Formulir Kesehatan</h2>
+        <div class="form-container">
+            <form action="/predict" method="POST"> 
+                <div class="input-box">
+                    <input type="number" name="age" required />
+                    <label>Age</label>
+                </div>
+                <div class="input-box">
+                    <input type="number" name="sex" required />
+                    <label>Sex</label>
+                    <small class="form-text text-muted"> (1 = Male, 0 = Female) </small>
+                </div>
+                <div class="input-box">
+                    <input type="number" name="cp" required />
+                    <label>Chest Pain Type (1-4)</label>
+                    <small class="form-text text-muted">
+                        Value 1: Typical Angina<br />
+                        Value 2: Atypical Angina<br />
+                        Value 3: Non-Anginal Pain<br />
+                        Value 4: Asymptomatic
+                    </small>
+                </div>
+                <div class="input-box">
+                    <input type="number" name="trestbps" required />
+                    <label>Resting Blood Pressure</label>
+                </div>
+                <div class="input-box">
+                    <input type="number" name="chol" required />
+                    <label>Serum Cholesterol</label>
+                </div>
+                <div class="input-box">
+                    <input type="number" name="fbs" required />
+                    <label>Fasting Blood Sugar</label>
+                    <small class="form-text text-muted">
+                        (fasting blood sugar > 120 mg/dl) (1 = true; 0 = false)
+                    </small>
+                </div>
+                <div class="input-box">
+                    <input type="number" name="restecg" required />
+                    <label>Resting ECG Results</label>
+                    <small class="form-text text-muted">
+                        Value 0: normal<br />
+                        Value 1: having ST-T wave abnormality (T wave inversions and/or ST
+                        elevation or depression of > 0.05 mV)<br />
+                        Value 2: showing probable or definite left ventricular hypertrophy
+                        by Estes' criteria Value 3: Non-Anginal Pain<br />
+                    </small>
+                </div>
+                <div class="input-box">
+                    <input type="number" name="thalach" required />
+                    <label>Maximum Heart Rate</label>
+                </div>
+                <div class="input-box">
+                    <input type="number" name="exang" required />
+                    <label>Exercise Induced Angina </label>
+                    <small class="form-text text-muted"> (1 = Yes; 0 = No) </small>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="oldpeak" required />
+                    <label>ST Depression (Oldpeak)</label>
+                    <small class="form-text text-muted">
+                        oldpeak = ST depression induced by exercise relative to rest
+                    </small>
+                </div>
+                <div class="input-box">
+                    <input type="number" name="slope" required />
+                    <label>Slope of Peak Exercise ST (1-3)</label>
+                    <small class="form-text text-muted">
+                        slope: the slope of the peak exercise ST segment<br />
+                        Value 1: upsloping<br />
+                        Value 2: flat<br />
+                        Value 3: downsloping<br />
+                    </small>
+                </div>
+                <div class="input-box">
+                    <input type="number" name="ca" required />
+                    <label>number of major vessels (0-3) colored by flourosopy</label>
+                </div>
+                <div class="input-box">
+                    <input type="number" name="thal" required />
+                    <label>Thallium Stress Test</label>
+                    <small class="form-text text-muted">
+                        3 = Normal<br />
+                        6 = Fixed<br />
+                        7 = Reversible<br />
+                    </small>
+                </div>
+                <button type="submit">Submit</button> 
+            </div>
+        </div>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        ></script>
+
+    </body>
+</html>
